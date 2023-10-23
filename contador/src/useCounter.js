@@ -10,10 +10,14 @@ export const useCounter = () => {
             setCount(count - 1);
         }
     };
+    const handleReset = () => {
+    setCount(0);
+    };
     return {
         count,
         handleDecrement,
-        handleIncrement
+        handleIncrement,
+        handleReset
     }
   
 }
